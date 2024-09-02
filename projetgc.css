@@ -1,0 +1,247 @@
+* {
+    scroll-behavior: smooth;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    height: 122px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    
+}
+header.fixed {
+    background: white;
+    padding: 0 2%;
+    z-index: 3;
+}
+img {
+    cursor: pointer;
+}
+.navbar ul li {
+    display: inline-block;
+    padding: 8px 12px;
+    
+    
+}
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #9fa0a6;
+    
+}
+.navbar ul li a:hover {
+    color: #c831df;
+}
+.navbar hr {
+    width: 100%;
+    height: 3px;
+    background: #c831df;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 10px;
+}
+.recherche {
+border: 1px solid #d1d1d1;
+padding: 8px 12px;
+border-radius: 35px;
+display: flex;
+align-items: center;
+
+}
+.recherche input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    width: 300px;
+}
+.text {
+    display: flex;
+    justify-content: space-between;
+}
+.text h1 {
+    color: #c831df;
+    font-size: 60px;
+    padding: 80px 80px;
+    max-width: 50%;
+}
+.text span {
+    color: #4ccac6;
+}
+.drop {
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    width: 50%;
+    right: 0;
+    height: 81vh;
+    background: linear-gradient(#c831df, #4ccac6);
+    position: absolute;
+    
+}
+.text img {
+    position: absolute;
+    margin-left: 50%;
+    z-index: 2;
+    animation: anim 2s linear;
+    border-radius: 50%;
+}
+@keyframes anim {
+    0% {
+        transform: translateX(-120px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+/*---------------setion_boutique------------*/
+.container {
+    max-width: 1080px;
+    margin: auto;
+    margin-top: 15%;
+}
+.tittle h1 {
+    text-align: center;
+    font-size: 50px;
+}
+.tittle hr {
+    width: 15%;
+    height: 6px;
+    border-radius: 10px;
+    border: 0;
+    background: #c831df;
+    margin-left: 42%;
+    margin-top: 20px;
+}
+.boite {
+    width: 25%;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    min-width: 200px;
+    transition: 1s;
+}
+.boite:hover {
+    transform: scale(-0.7, 1);
+}
+.boite img {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+.roi {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.couleurs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+.couleurs span {
+    width: 10px;
+    height: 10px;
+    background: var(--i);
+    border-radius: 50%;
+}
+.details {
+    margin-top: 10px;
+}
+
+.apropos {
+    display: flex;
+    align-items: center;
+    padding: 40px 80px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    
+}
+.apropos p {
+    font-size: 20px;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 80px;
+}
+.content img {
+    border-radius: 10px;
+}
+form {
+    width: 480px;
+    height: 350px;
+    border-radius: 20px;
+    background: linear-gradient(#c831df, #4ccac6);
+    padding: 0 30px;
+}
+.cool {
+    width: 100%;
+    padding: 5%;
+}
+.cool input {
+    width: 350px;
+    height: 60px;
+    background: transparent;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    font-size: 18px;
+    color: #fff;
+}
+input[type="submit"] {
+    height: 60px;
+    background: #fff;
+    color: #c831df;
+    font-size: 18px;
+    border-radius: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5;
+}
+input[type="submit"]:hover {
+background: #c831df;
+color: #fff;
+border: 0;
+}
+/*---------------setion_footer------------*/
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.footer .logo img {
+width: 70px;
+display: flex;
+margin-left: -40px;
+}
+.footer-list li {
+    display: inline-block;
+    list-style: none;
+    padding: 8% 20px;
+
+}
+.footer-list li a {
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.copyright {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.copyright hr {
+    width: 80%;
+    height: 3px;
+    background: #d7d7d7;
+    border: 0;
+    border-radius: 10px;
+}
